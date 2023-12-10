@@ -29,5 +29,12 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+# !!!NOTE: pseudo error messages
 en:
-  hello: "Hello world"
+  api:
+    v1:
+      exceptions:
+        record_not_found: RecordNotFound
+        invalid_ip_presence: ip address blank
+        provider_error: provider_error
+

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.ipstack.com/111.2?access_key=e4485bc1a9b17f912c022321fbbae910
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.ipstack.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 10 Dec 2023 19:24:07 GMT
+      X-Apilayer-Transaction-Id:
+      - 822e413a-f34d-4716-98cf-c2c3238d831b
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '1000'
+      X-Quota-Remaining:
+      - '975'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.050'
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"error":{"code":106,"type":"invalid_ip_address","info":"The
+        IP Address supplied is invalid."}}'
+    http_version:
+  recorded_at: Sun, 10 Dec 2023 19:24:07 GMT
+recorded_with: VCR 2.9.3
